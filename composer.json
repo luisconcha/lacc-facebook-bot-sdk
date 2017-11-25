@@ -1,6 +1,6 @@
 {
-  "name": "luisconcha/facebook-bot-sdk",
-  "description": "Projeto de chatbooks para facebook com vue e laravel",
+  "name": "luisconcha/lacc-facebook-bot-sdk",
+  "description": "Design of chatbooks for facebook with vue and laravel",
   "type": "library",
   "license": "MIT",
   "authors": [
