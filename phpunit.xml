@@ -3,7 +3,8 @@
 <phpunit bootstrap="./vendor/autoload.php">
     <testsuites>
         <testsuite name="The project SDK chatboks">
-            <directory>./tests</directory>
+            <directory>./tests/unity</directory>
+            <directory>./tests/integration</directory>
         </testsuite>
     </testsuites>
 </phpunit>
