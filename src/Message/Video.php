@@ -1,11 +1,11 @@
 <?php
 /**
- * File: Text.php
+ * File: Video.php
  * Created by: Luis Alberto Concha Curay.
  * Email: luisconchacuray@gmail.com
  * Language: PHP
  * Date: 25/11/17
- * Time: 20:28
+ * Time: 22:00
  * Project: 3_chatbooks_laravel
  * Copyright: 2017
  */
@@ -13,9 +13,8 @@
 namespace LACCBot\Message;
 
 
-class Text implements Message
+class Video implements Message
 {
-
     private $containerId;
 
     public function __construct($containerId)
@@ -30,8 +29,12 @@ class Text implements Message
                 'id' => $this->containerId
             ],
             'message' => [
-                'text' => $messageText,
-                'metadata' => 'DEVELOPER_DEFINED_METADATA'
+                'attachment' => [
+                    'type' => 'video',
+                    'payload' => [
+                        'url' => $messageText
+                    ]
+                ],
             ]
         ];
     }
