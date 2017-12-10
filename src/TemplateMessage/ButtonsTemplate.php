@@ -13,9 +13,8 @@
 namespace LACCBot\TemplateMessage;
 
 use LACCBot\Element\ElementInterface;
-use LACCBot\Message\Message;
 
-class ButtonsTemplate implements Message
+class ButtonsTemplate implements TemplateInterface
 {
     protected $buttons = [];
 
