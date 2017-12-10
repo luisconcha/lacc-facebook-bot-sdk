@@ -42,7 +42,7 @@ class GenericTemplateTest extends TestCase
                     'type' => 'template',
                     'payload' => [
                         'template_type' => 'generic',
-                        'buttons' => [
+                        'elements' => [
                             [
                                 'title' => 'produto 01',
                                 'subtitle' => 'thundercats',
